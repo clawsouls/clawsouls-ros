@@ -142,6 +142,10 @@ from clawsouls_ros.soul_loader import download_soul
 soul = download_soul("clawsouls", "care-companion")
 ```
 
+## ⚠️ Spec Version Compatibility
+
+> This package is designed for **v0.5 souls with `environment: "physical"`**. The `safety_monitor` node enforces physical constraints (`maxSpeed`, `contactPolicy`) that only apply to embodied agents. If you're building a text-only agent, use `environment: "virtual"` in your `soul.json` — the [clawsouls](https://github.com/clawsouls/clawsouls) CLI package handles text-only deployment.
+
 ## Links
 
 - [ClawSouls](https://clawsouls.ai) — Soul package registry
