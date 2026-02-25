@@ -1,0 +1,12 @@
+personality_node:
+  ros__parameters:
+    soul_path: "./souls/care-companion"
+    api_provider: "anthropic"
+    api_key: ""
+    model: "claude-sonnet-4-20250514"
+    max_turns: 20
+
+safety_monitor:
+  ros__parameters:
+    soul_path: "./souls/care-companion"
+    status_rate: 1.0
